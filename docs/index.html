@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 3rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2c3e50;
+            letter-spacing: 2px;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #3498db;
+        }
+
+        .hero {
+            margin-top: 100px;
+            height: 850px;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                        url('Image1.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            line-height: 1.8;
+        }
+
+        .section {
+            padding: 5rem 3rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+            font-weight: 700;
+        }
+
+        .section-subtitle {
+    max-width: 900px;         /* 宽度限制，控制整块的长度 */
+    margin: 1rem auto;        /* 上下间距 + 居中容器 */
+    padding: 2rem 2.5rem;     /* 内边距，让文字离边框有距离 */
+    text-align: justify;       /* 两端对齐，让左右整齐 */
+    background: #f5f7fa;      /* 背景颜色，可根据需要修改 */
+    color: #2c3e50;           /* 文字颜色 */
+    font-size: 1.1rem;
+    line-height: 1.8;         /* 增加行间距，让文字更易读 */
+}
+
+
+
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+        .card-text {
+    text-align: justify; /* 两端对齐 */
+    line-height: 1.6;
+    color: #7f8c8d;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 220px;
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.5rem;
+        }
+
+        .card-content {
+            padding: 2rem;
+        }
+
+        .card-content h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+                text-align: center;
+        }
+
+        .card-content p {
+            color: #7f8c8d;
+            line-height: 1.7;
+        }
+
+        .stats {
+            background: linear-gradient(135deg, #2a4e72 0%, #afbac5 100%);
+            color: white;
+            text-align: center;
+            max-width: none;   
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 3rem; 
+        }
+
+        .stat-item h3 {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .stat-item p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .cta-section {
+             background: url('image4.png') no-repeat center center;
+            background-size: cover;
+            color: rgb(22, 86, 125);
+            text-align: center;
+            padding: 5rem 3rem;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            background: white;
+            color: #000000;
+            padding: 1rem 2.5rem;
+  border: 2px solid black; /* 黑色边框 */
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-block;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cta-button:hover {
+            background: #ecf0f1;
+            transform: translateY(-3px);
+        }
+
+        footer {
+            background: #1a252f;
+            color: #ecf0f1;
+            padding: 4rem 3rem 2rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h3 {
+            color: #fff;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-section a {
+            color: #bdc3c7;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: #3498db;
+        }
+
+        .footer-section p {
+            color: #bdc3c7;
+            font-size: 0.9rem;
+            line-height: 1.8;
+        }
+
+        .footer-logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #2c3e50;
+            padding-top: 2rem;
+            text-align: center;
+            color: #95a5a6;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            nav {
+                padding: 1rem 1.5rem;
+            }
+            .nav-links {
+                gap: 1rem;
+                font-size: 0.85rem;
+            }
+            .section {
+                padding: 3rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+  <img src="logo.png" alt="Logo">
+</a>
+
+</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Creating the Future with Antibacterial Innovation</h1>
+            <p>New antibacterial technology to provide customizable solutions for antibacterial, antiviral, antifungal, and anti-mite applications.</p>
+            <a href="contact.html" class="cta-button">Get in Touch</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Product Information</h2>
+        <p class="section-subtitle">Advanced Biotech’s polymer technology enables antibacterial, antifungal, and—depending on formulation—antiviral and anti-mite performance, while being engineered for human and mammalian safety. We can propose an implementation plan and tailor the formulation to your production needs.</p>
+<p class="section-subtitle">• Electrostatic targeting of microbes. Many bacteria and fungi carry a negatively charged cell surface. Our positively charged antibacterial polymers are attracted to these surfaces, then disrupt membrane integrity—causing leakage of cellular contents and loss of viability.</p>
+<p class="section-subtitle">• Selectivity for mammalian cells. Mammalian cell membranes are near-neutral overall, which reduces non-specific binding of cationic polymers under normal use conditions. This difference in surface charge underpins the technology’s selectivity.</p>
+<p class="section-subtitle">• Process-friendly. The polymers exhibit high thermal stability and elevated decomposition temperatures, making them compatible with common molding and compounding processes.</p>
+
+
+       <div class="cards-grid">
+    <div class="card">
+        <div class="card-image">
+            <img src="image5.jpg" alt="Masterbatch" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+        <div class="card-content">
+            <h3>Antibacterial Masterbatch</h3>
+            <p class="card-text">Crafted using molecular-level engineering, this product integrates a polymeric organic antibacterial agent to deliver excellent performance against bacteria, viruses, molds, and mites. It contains no silver, eliminating concerns about discoloration or metal corrosion, making it safe to embed into diverse materials. Widely applied across food packaging, textiles, livestock, and water purification, it sustains stable efficacy over extended periods. Customization is available to tailor it to your application needs.</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-image">
+            <img src="image6.jpg" alt="Liquid Concentrate" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+        <div class="card-content">
+            <h3>Antibacterial Liquid Concentrate</h3>
+            <p class="card-text">A versatile and high-strength antibacterial concentrate, this product contains polymeric organic actives designed to provide effective protection. In its liquid form, it integrates seamlessly into existing blending and filling lines, allowing manufacturers to easily incorporate it into their production processes. It delivers consistent antibacterial function across a wide range of products, ensuring reliable performance in diverse applications.</p>
+    </div>
+</div>
+
+
+    </section>
+
+    <section class="section stats">
+        <h2 class="section-title">Our Track Record</h2>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3>60+</h3>
+                <p>Global Partners</p>
+            </div>
+            <div class="stat-item">
+                <h3>15+</h3>
+                <p>Industries Served</p>
+            </div>
+            <div class="stat-item">
+                <h3>15+</h3>
+                <p>Patents & Certifications</p>
+            </div>
+            <div class="stat-item">
+                <h3>30+</h3>
+                <p>Academic Publications</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>Ready to Transform Your Products?</h2>
+        <p>Contact us today to discuss how our solutions can benefit your business</p>
+        <a href="contact.html" class="cta-button">Contact Us Now</a>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">ADVANCED BIOTECH</div>
+                    <p>Leading the future with innovative antibacterial technology solutions for a healthier world.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="solutions.html">Solutions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Our Products</h3>
+                    <ul>
+                        <li><a href="products.html">Antibacterial Masterbatch</a></li>
+                        <li><a href="products.html">Antibacterial Liquid Concentrate</a></li>
+                        <li><a href="products.html">Custom Solutions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>2 Goodman Place,<br>Penrose, Auckland,<br>New Zealand 1061</p>
+                    <p style="margin-top: 1rem;">info@advancedbiotech.co.nz</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 ADVANCED BIOTECH. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
