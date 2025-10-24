@@ -298,21 +298,6 @@
             text-align: center;
             color: #95a5a6;
         }
-
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-            nav {
-                padding: 1rem 1.5rem;
-            }
-            .nav-links {
-                gap: 1rem;
-                font-size: 0.85rem;
-            }
-            .section {
-                padding: 3rem 1.5rem;
-            }
         }
     </style>
 /* 全局样式 */
@@ -717,6 +702,7 @@ footer {
     display: flex;
   }
 }
+
 
 
 
