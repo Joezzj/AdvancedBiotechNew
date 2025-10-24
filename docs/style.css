@@ -59,19 +59,20 @@
             color: #3498db;
         }
 
-        .hero {
-            margin-top: 100px;
-            height: 850px;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                        url('Image1.png');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-        }
+        /* 首页 hero 背景 */
+.home-hero {
+    margin-top: 100px;
+    height: 850px;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                url('Image1.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
 
         .hero-content {
             max-width: 900px;
@@ -978,6 +979,7 @@ footer {
     display: flex;
   }
 }
+
 
 
 
