@@ -71,7 +71,7 @@ nav {
 .hero.home-hero {
   margin-top: 100px;
   height: 850px;
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("Image1.png");
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("image1.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -85,7 +85,7 @@ nav {
 .page-header.products-header {
   margin-top: 80px;
   height: 850px;
-  background: url("Image2.png") no-repeat center center/cover;
+  background: url("image2.png") no-repeat center center/cover;
   color: rgb(10, 86, 104);
   text-align: center;
   display: flex;
@@ -99,7 +99,7 @@ nav {
 .contact-header {
   margin-top: 80px;
   height: 600px;
-  background: url("Image23.jpg") no-repeat center center/cover;
+  background: url("image23.jpg") no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -399,3 +399,4 @@ footer {
     padding: 3rem 1rem;
   }
 }
+
