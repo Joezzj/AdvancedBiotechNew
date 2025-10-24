@@ -258,6 +258,120 @@ footer {
   opacity: 0.9;
   max-width: 800px;
 }
+/* === 响应式优化 === */
+
+/* 平板以下设备 */
+@media (max-width: 992px) {
+  nav {
+    padding: 1rem 2rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .hero, .page-header {
+    height: 60vh;
+    padding: 1rem;
+  }
+
+  .section {
+    padding: 3rem 2rem;
+  }
+
+  .cards-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .product-content {
+    padding: 1.5rem;
+  }
+}
+
+/* 手机竖屏（小于768px） */
+@media (max-width: 768px) {
+  nav {
+    justify-content: space-between;
+  }
+
+  /* 隐藏导航栏，显示菜单按钮 */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    border-radius: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #2c3e50;
+  }
+
+  .hero, .page-header {
+    height: auto;
+    padding: 5rem 1rem;
+  }
+
+  .hero h1, .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .hero p, .page-header p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* 小屏手机（480px以下） */
+@media (max-width: 480px) {
+  body {
+    font-size: 15px;
+  }
+
+  .hero h1, .page-header h1 {
+    font-size: 1.7rem;
+  }
+
+  .cta-button {
+    padding: 0.8rem 1.8rem;
+    font-size: 0.9rem;
+  }
+
+  input, textarea {
+    font-size: 0.9rem;
+  }
+}
+
+
 
 
 
