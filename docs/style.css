@@ -74,10 +74,10 @@ nav {
   padding: 2rem;
 }
 
-.home-hero { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('Image1.png'); }
-.product-header { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('Image2.png'); }
-.solution-header { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('Image3.png'); }
-.contact-header { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('Image4.png'); }
+.home-hero { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('image1.png'); }
+.product-header { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('image2.png'); }
+.solution-header { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('image3.png'); }
+.contact-header { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('image4.png'); }
 
 .hero-content, .product-header-content, .solution-header-content, .contact-header-content {
   max-width: 900px;
@@ -246,3 +246,4 @@ footer {
   .cta-button { padding: 0.8rem 1.8rem; font-size: 0.9rem; }
   input, textarea { font-size: 0.9rem; }
 }
+
