@@ -233,7 +233,7 @@ footer {
 @media (max-width: 768px) {
   .nav-links { display: none; flex-direction: column; background: #fff; position: absolute; top: 70px; right: 10px; width: 200px; padding: 1rem; border-radius: 10px; box-shadow: 0 5px 10px rgba(0,0,0,0.1); }
   .nav-links.active { display: flex; }
-  .menu-toggle { display: block; cursor: pointer; color: #333; font-size: 2rem; }
+  .menu-toggle { cursor: pointer; color: #333; font-size: 2rem; }
   .hero-content h1, .product-header-content h1, .solution-header-content h1, .contact-header-content h1 { font-size: 2rem; }
   .hero-content p, .product-header-content p, .solution-header-content p, .contact-header-content p { font-size: 1rem; line-height: 1.6; }
   .cards-grid, .products-grid { grid-template-columns: 1fr; gap: 1.8rem; }
@@ -247,3 +247,36 @@ footer {
   input, textarea { font-size: 0.9rem; }
 }
 
+
+
+.dropDown{
+  position:absolute;
+  width: auto;
+  background-color: #fff;
+  right: 10px;
+  top:80px;
+  display:flex;
+  flex-direction:column;
+  padding:15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.15);
+  display: none;
+}
+
+.dropDown a{
+  color: inherit;
+  text-decoration: none; 
+}
+.dropDown li{
+  list-style: none;
+  padding: 0; 
+  margin: 0;
+  text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  padding: 5px 0;
+}
