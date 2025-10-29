@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products - ADVANCED BIOTECH</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 </head>
+
 <body>
     <header>
         <nav>
             <a href="index.html" class="logo">
-  <img src="logo.png" alt="Logo">
-</a>
-            <ul class="nav-links">
+                <img src="logo.png" alt="Logo">
+            </a>
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+            <ul class="nav-links" id="dropDown">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html" class="active">Products</a></li>
                 <li><a href="solutions.html">Solutions</a></li>
@@ -21,165 +25,205 @@
         </nav>
     </header>
 
-  <section class="product-header">
-  <div class="product-header-content">
-        <h1>Our Products</h1>
-        <p>High-quality antibacterial functional materials for various industries</p>
-    </div>
-      </section>
-
-   <section class="section">
-    <div class="products-grid">
-        <!-- Card 1 -->
-        <div class="product-card">
-            <div class="product-image"><img src="image11.png" alt="Masterbatch" style="width:100%; height:100%; object-fit:cover;">
+    <section class="product-header">
+        <div class="product-header-content">
+            <h1>Our Products</h1>
+            <p>High-quality antibacterial functional materials for various industries</p>
         </div>
-            <div class="product-content">
-                <h3>Antibacterial Masterbatch</h3>
-                <p>Engineered for powerful antibacterial performance and excellent processability, this technology integrates easily with a wide range of resins and manufacturing methods.</p>
-                <p>99.9% antibacterial efficacy (ISO-tested) compatible with PP, ABS, Nylon, PE, PET, and other plastics.</p>
-                <p>Supports injection, extrusion, spinning, and blow molding.</p>
-                <p>Safe & eco-friendly: non-leaching and harmless to humans, animals, and water systems.</p>
-                <p>Customizable: base material, active content, color, and additives tailored to your needs.</p>
+    </section>
+
+    <section class="section">
+        <div class="products-grid">
+            <!-- Card 1 -->
+            <div class="product-card">
+                <div class="product-image"><img src="image11.png" alt="Masterbatch"
+                        style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="product-content">
+                    <h3>Antibacterial Masterbatch</h3>
+                    <p>Engineered for powerful antibacterial performance and excellent processability, this technology
+                        integrates easily with a wide range of resins and manufacturing methods.</p>
+                    <p>99.9% antibacterial efficacy (ISO-tested) compatible with PP, ABS, Nylon, PE, PET, and other
+                        plastics.</p>
+                    <p>Supports injection, extrusion, spinning, and blow molding.</p>
+                    <p>Safe & eco-friendly: non-leaching and harmless to humans, animals, and water systems.</p>
+                    <p>Customizable: base material, active content, color, and additives tailored to your needs.</p>
+                </div>
             </div>
-        </div>
 
-        <!-- Card 2 -->
-        <div class="product-card">
-            <div class="product-image"><img src="image12.png" alt="Masterbatch" style="width:100%; height:100%; object-fit:cover;">
-        </div>
-            <div class="product-content">
-                <h3>Antibacterial Liquid Concentrate</h3>
-                <p>Uniformly dispersed for reliable antibacterial performance and easy customization across applications.</p>
-                <p>High concentration: Effective even when diluted.</p>
-                <p>Versatile platform: Ideal for sprays, coatings, and cleaning products.</p>
-                <p>Easy integration: Fits seamlessly into existing production lines.</p>
-                <p>Safe & eco-friendly: Free of silver and harmful metals.</p>
+            <!-- Card 2 -->
+            <div class="product-card">
+                <div class="product-image"><img src="image12.png" alt="Masterbatch"
+                        style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="product-content">
+                    <h3>Antibacterial Liquid Concentrate</h3>
+                    <p>Uniformly dispersed for reliable antibacterial performance and easy customization across
+                        applications.</p>
+                    <p>High concentration: Effective even when diluted.</p>
+                    <p>Versatile platform: Ideal for sprays, coatings, and cleaning products.</p>
+                    <p>Easy integration: Fits seamlessly into existing production lines.</p>
+                    <p>Safe & eco-friendly: Free of silver and harmful metals.</p>
+                </div>
             </div>
-        </div>
 
-        <!-- Card 3 -->
-        <div class="product-card">
-            <div class="product-image"><img src="image13.png" alt="Masterbatch" style="width:100%; height:100%; object-fit:cover;">
-        </div>
-            <div class="product-content">
-                <h3>Antibacterial Liquid / Disinfectant Spray</h3>
-                <p>Formulated with non-silver, low-odor, and non-toxic technology, this antibacterial solution provides fast, broad-spectrum protection against bacteria and viruses.</p>
-                <p>Ideal for public spaces, schools, offices, and factories, it can be customized for spray or surface cleaning applications to enhance hygiene and improve cleaning efficiency while minimizing environmental impact.</p>
+            <!-- Card 3 -->
+            <div class="product-card">
+                <div class="product-image"><img src="image13.png" alt="Masterbatch"
+                        style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="product-content">
+                    <h3>Antibacterial Liquid / Disinfectant Spray</h3>
+                    <p>Formulated with non-silver, low-odor, and non-toxic technology, this antibacterial solution
+                        provides fast, broad-spectrum protection against bacteria and viruses.</p>
+                    <p>Ideal for public spaces, schools, offices, and factories, it can be customized for spray or
+                        surface cleaning applications to enhance hygiene and improve cleaning efficiency while
+                        minimizing environmental impact.</p>
+                </div>
             </div>
-        </div>
 
-        <!-- Card 4 -->
-        <div class="product-card">
-            <div class="product-image"><img src="image14.png" alt="Masterbatch" style="width:100%; height:100%; object-fit:cover;">
-        </div>
-            <div class="product-content">
-                <h3>Cleaning Solution for Food Processing Sites</h3>
-                <p>Designed for food processing plants, cafeterias, and kitchens, this solution targets grease, bacteria, and mold in high-hygiene environments.</p>
-                <p>Our antibacterial functional mother liquid works with cleaning agents to remove grease, disinfect surfaces, and prevent mold growth — all without silver compounds, avoiding corrosion or discoloration.</p>
+            <!-- Card 4 -->
+            <div class="product-card">
+                <div class="product-image"><img src="image14.png" alt="Masterbatch"
+                        style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="product-content">
+                    <h3>Cleaning Solution for Food Processing Sites</h3>
+                    <p>Designed for food processing plants, cafeterias, and kitchens, this solution targets grease,
+                        bacteria, and mold in high-hygiene environments.</p>
+                    <p>Our antibacterial functional mother liquid works with cleaning agents to remove grease, disinfect
+                        surfaces, and prevent mold growth — all without silver compounds, avoiding corrosion or
+                        discoloration.</p>
+                </div>
             </div>
-        </div>
 
-        <!-- Card 5 -->
-        <div class="product-card">
-            <div class="product-image"><img src="image15.png" alt="Masterbatch" style="width:100%; height:100%; object-fit:cover;">
-        </div>
-            <div class="product-content">
-                <h3>Daily Cleaning Solution</h3>
-                <p>Maintaining hygiene in schools, offices, and public facilities requires efficient daily cleaning.</p>
-                <p>Our antibacterial liquid enhances regular cleaning solutions by providing antibacterial and deodorizing effects, while remaining non-silver, low-odor, and non-toxic.</p>
-                <p>Formulations can be adjusted to suit specific applications, improving both cleaning efficiency and hygiene standards without harming materials or equipment.</p>
+            <!-- Card 5 -->
+            <div class="product-card">
+                <div class="product-image"><img src="image15.png" alt="Masterbatch"
+                        style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="product-content">
+                    <h3>Daily Cleaning Solution</h3>
+                    <p>Maintaining hygiene in schools, offices, and public facilities requires efficient daily cleaning.
+                    </p>
+                    <p>Our antibacterial liquid enhances regular cleaning solutions by providing antibacterial and
+                        deodorizing effects, while remaining non-silver, low-odor, and non-toxic.</p>
+                    <p>Formulations can be adjusted to suit specific applications, improving both cleaning efficiency
+                        and hygiene standards without harming materials or equipment.</p>
+                </div>
             </div>
-        </div>
 
-        <!-- Card 6 -->
-        <div class="product-card">
-            <div class="product-image"><img src="image16.png" alt="Masterbatch" style="width:100%; height:100%; object-fit:cover;">
-        </div>
-            <div class="product-content">
-                <h3>Wet Wipes and Sanitary Cloths</h3>
-                <p>Our antibacterial solution provides strong, long-lasting protection for woven and nonwoven fabrics.</p>
-                <p>It’s water-based, low-irritation, and available in both alcohol and non-alcohol formulas.</p>
-                <p>Can be combined with moisturizing or fragrance ingredients to enhance comfort and hygiene.</p>
+            <!-- Card 6 -->
+            <div class="product-card">
+                <div class="product-image"><img src="image16.png" alt="Masterbatch"
+                        style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="product-content">
+                    <h3>Wet Wipes and Sanitary Cloths</h3>
+                    <p>Our antibacterial solution provides strong, long-lasting protection for woven and nonwoven
+                        fabrics.</p>
+                    <p>It’s water-based, low-irritation, and available in both alcohol and non-alcohol formulas.</p>
+                    <p>Can be combined with moisturizing or fragrance ingredients to enhance comfort and hygiene.</p>
+                </div>
             </div>
-        </div>
 
-        <!-- Card 7 -->
-<div class="product-card">
-    <div class="product-image"><img src="image17.png" alt="Masterbatch" style="width:100%; height:100%; object-fit:cover;">
-        </div>
-    <div class="product-content">
-        <h3>Antibacterial Coating Agent</h3>
-        <p>Our antibacterial coating forms a durable, transparent layer that inhibits bacteria and virus growth on frequently touched surfaces such as doorknobs, handrails, and counters.</p>
-        <p>It offers excellent water and abrasion resistance, is easy to reapply, and helps maintain long-term cleanliness and hygiene in public and commercial spaces.</p>
-    </div>
-</div>
+            <!-- Card 7 -->
+            <div class="product-card">
+                <div class="product-image"><img src="image17.png" alt="Masterbatch"
+                        style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="product-content">
+                    <h3>Antibacterial Coating Agent</h3>
+                    <p>Our antibacterial coating forms a durable, transparent layer that inhibits bacteria and virus
+                        growth on frequently touched surfaces such as doorknobs, handrails, and counters.</p>
+                    <p>It offers excellent water and abrasion resistance, is easy to reapply, and helps maintain
+                        long-term cleanliness and hygiene in public and commercial spaces.</p>
+                </div>
+            </div>
 
-<!-- Card 8 -->
-<div class="product-card">
-    <div class="product-image"><img src="image18.png" alt="Masterbatch" style="width:100%; height:100%; object-fit:cover;">
-        </div>
-    <div class="product-content">
-        <h3>Pet Supplies</h3>
-        <p>Our antibacterial masterbatch keeps pet bowls, litter boxes, toys, and brushes clean and odor-free for long periods.</p>
-        <p>It’s compatible with PE, PP, TPE, and ABS, suitable for injection molding, extrusion, and blow molding.</p>
-        <p>The formula is non-silver, odorless, and safe for pets.</p>
-        <p>OEM customization is available for color and concentration adjustments.</p>
-    </div>
-</div>
+            <!-- Card 8 -->
+            <div class="product-card">
+                <div class="product-image"><img src="image18.png" alt="Masterbatch"
+                        style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="product-content">
+                    <h3>Pet Supplies</h3>
+                    <p>Our antibacterial masterbatch keeps pet bowls, litter boxes, toys, and brushes clean and
+                        odor-free for long periods.</p>
+                    <p>It’s compatible with PE, PP, TPE, and ABS, suitable for injection molding, extrusion, and blow
+                        molding.</p>
+                    <p>The formula is non-silver, odorless, and safe for pets.</p>
+                    <p>OEM customization is available for color and concentration adjustments.</p>
+                </div>
+            </div>
 
-<!-- Card 9 -->
-<div class="product-card">
-    <div class="product-image"><img src="image19.png" alt="Masterbatch" style="width:100%; height:100%; object-fit:cover;">
-        </div>
-    <div class="product-content">
-        <h3>Livestock Facilities</h3>
-        <p>Our antibacterial masterbatch helps maintain hygiene in feeders, tanks, flooring, and breeding equipment, reducing bacteria and odor buildup.</p>
-        <p>It also suppresses ammonia and hydrogen sulfide, improving air quality and the overall environment.</p>
-        <p>Highly moldable and safe for animals, it can be easily integrated into existing equipment.</p>
-        <p>OEM customization is available for additional functions and formulations.</p>
-    </div>
-</div>
+            <!-- Card 9 -->
+            <div class="product-card">
+                <div class="product-image"><img src="image19.png" alt="Masterbatch"
+                        style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="product-content">
+                    <h3>Livestock Facilities</h3>
+                    <p>Our antibacterial masterbatch helps maintain hygiene in feeders, tanks, flooring, and breeding
+                        equipment, reducing bacteria and odor buildup.</p>
+                    <p>It also suppresses ammonia and hydrogen sulfide, improving air quality and the overall
+                        environment.</p>
+                    <p>Highly moldable and safe for animals, it can be easily integrated into existing equipment.</p>
+                    <p>OEM customization is available for additional functions and formulations.</p>
+                </div>
+            </div>
 
-<!-- Card 10 -->
-<div class="product-card">
-    <div class="product-image"><img src="image20.png" alt="Masterbatch" style="width:100%; height:100%; object-fit:cover;">
-        </div>
-    <div class="product-content">
-        <h3>Automotive and Home Textiles</h3>
-        <p>Our antibacterial material provides long-lasting protection for textiles and resin products used in items such as car seats, steering wheel covers, sofas, and curtains.</p>
-        <p>It offers excellent dispersion during processing (extrusion, spinning, or casting), ensuring even antibacterial performance.</p>
-        <p>The material is durable, resistant to daily wear and washing, and helps enhance the value and longevity of textile products.</p>
-    </div>
-</div>
+            <!-- Card 10 -->
+            <div class="product-card">
+                <div class="product-image"><img src="image20.png" alt="Masterbatch"
+                        style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="product-content">
+                    <h3>Automotive and Home Textiles</h3>
+                    <p>Our antibacterial material provides long-lasting protection for textiles and resin products used
+                        in items such as car seats, steering wheel covers, sofas, and curtains.</p>
+                    <p>It offers excellent dispersion during processing (extrusion, spinning, or casting), ensuring even
+                        antibacterial performance.</p>
+                    <p>The material is durable, resistant to daily wear and washing, and helps enhance the value and
+                        longevity of textile products.</p>
+                </div>
+            </div>
 
-<!-- Card 11 -->
-<div class="product-card">
-    <div class="product-image"><img src="image21.png" alt="Masterbatch" style="width:100%; height:100%; object-fit:cover;">
-        </div>
-    <div class="product-content">
-        <h3>Water Purification Equipment</h3>
-        <p>Our antibacterial masterbatch delivers long-lasting protection for water filters, tanks, and distribution systems without affecting water quality.</p>
-        <p>The non-silver, non-leaching formulation prevents metal corrosion and ensures stable antibacterial performance over time.</p>
-        <p>It offers high durability and thermal stability, making it ideal for injection molding and blow molding applications.</p>
-    </div>
-</div>
+            <!-- Card 11 -->
+            <div class="product-card">
+                <div class="product-image"><img src="image21.png" alt="Masterbatch"
+                        style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="product-content">
+                    <h3>Water Purification Equipment</h3>
+                    <p>Our antibacterial masterbatch delivers long-lasting protection for water filters, tanks, and
+                        distribution systems without affecting water quality.</p>
+                    <p>The non-silver, non-leaching formulation prevents metal corrosion and ensures stable
+                        antibacterial performance over time.</p>
+                    <p>It offers high durability and thermal stability, making it ideal for injection molding and blow
+                        molding applications.</p>
+                </div>
+            </div>
 
-<!-- Card 12 -->
-<div class="product-card">
-    <div class="product-image"><img src="image22.png" alt="Masterbatch" style="width:100%; height:100%; object-fit:cover;">
-        </div>
-    <div class="product-content">
-        <h3>Food Packaging</h3>
-        <p>Our antibacterial masterbatch combines safety and freshness for food packaging films, trays, and containers.</p>
-        <p>Formulated with non-silver, inorganic ingredients, it provides strong antibacterial protection while preventing migration into food.</p>
-        <p>The non-leaching design ensures long-term stability and preserves food quality, supporting both hygiene and extended shelf life.</p>
-        <p>It’s an ideal solution for maintaining freshness and enhancing the value of food brands.</p>
-    </div>
-</div>
+            <!-- Card 12 -->
+            <div class="product-card">
+                <div class="product-image"><img src="image22.png" alt="Masterbatch"
+                        style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="product-content">
+                    <h3>Food Packaging</h3>
+                    <p>Our antibacterial masterbatch combines safety and freshness for food packaging films, trays, and
+                        containers.</p>
+                    <p>Formulated with non-silver, inorganic ingredients, it provides strong antibacterial protection
+                        while preventing migration into food.</p>
+                    <p>The non-leaching design ensures long-term stability and preserves food quality, supporting both
+                        hygiene and extended shelf life.</p>
+                    <p>It’s an ideal solution for maintaining freshness and enhancing the value of food brands.</p>
+                </div>
+            </div>
 
-    </div>
-</section>
+        </div>
+    </section>
 
 
     <section class="cta-section">
@@ -228,8 +272,5 @@
         </div>
     </footer>
 </body>
+
 </html>
-
-
-
-
