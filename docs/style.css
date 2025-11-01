@@ -158,20 +158,37 @@ nav {
 
 /* ====== CTA Section ====== */
 .cta-section {
-  background: url('image5.png') no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+              url('image23.png') no-repeat center center;
   background-size: cover;
-  color: rgb(22, 86, 125);
+  color: #fff;
   text-align: center;
-  padding: 5rem 3rem;
+  padding: 6rem 3rem;
   font-weight: bold;
+  border-top: 3px solid rgba(255, 255, 255, 0.3);
 }
 
-.cta-section h2 { font-size: 2.2rem; margin-bottom: 1rem; }
+.cta-section h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
 .cta-button {
-  background: rgb(255,255,255);
+  background: rgba(255, 255, 255, 0.9);
   color: #000;
   padding: 1rem 2.5rem;
-  border: 2px solid black;
   border-radius: 50px;
   font-size: 1rem;
   font-weight: 600;
@@ -181,9 +198,14 @@ nav {
   text-transform: uppercase;
   letter-spacing: 1px;
   display: inline-block;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+  border: none;
 }
-.cta-button:hover { background: #ecf0f1; transform: translateY(-3px); }
+
+.cta-button:hover {
+  background: #fff;
+  transform: translateY(-3px);
+}
 
 /* ====== Footer ====== */
 footer {
@@ -280,5 +302,6 @@ footer {
     letter-spacing: 0.5px;
   padding: 5px 0;
 }
+
 
 
