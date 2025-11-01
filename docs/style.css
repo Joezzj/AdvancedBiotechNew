@@ -77,7 +77,7 @@ nav {
 .home-hero { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('image1.png'); }
 .product-header { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('image2.png'); }
 .solution-header { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('image3.png'); }
-.contact-header { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('image23.jpg'); }
+.contact-header { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('image4.png'); }
 
 .hero-content, .product-header-content, .solution-header-content, .contact-header-content {
   max-width: 900px;
@@ -280,4 +280,5 @@ footer {
     letter-spacing: 0.5px;
   padding: 5px 0;
 }
+
 
