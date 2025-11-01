@@ -185,6 +185,7 @@ nav {
   line-height: 1.7;
 }
 
+/* CTA 按钮 */
 .cta-button {
   background: rgba(255, 255, 255, 0.9);
   color: #000;
@@ -193,18 +194,19 @@ nav {
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
   display: inline-block;
   margin-top: 1.5rem;
-  border: none;
+  border: 2px solid #000;  
 }
 
 .cta-button:hover {
   background: #fff;
   transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* ====== Footer ====== */
@@ -302,6 +304,7 @@ footer {
     letter-spacing: 0.5px;
   padding: 5px 0;
 }
+
 
 
 
